@@ -1,15 +1,26 @@
 ﻿<!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-    <title>创新云社区-基于云计算的实验室科研创新平台</title>
-     <meta name="description" content="创新云社区-提供基于云计算的化学试剂库存、实验室物资采购、电子实验记录一体化平台、为您轻松提升研发创新能力。" />
-    <meta name="keywords" content="试剂管理，实验室信息化，电子实验记录本，ilab，CIMS，PMS,ELN，LIMS,科研，创新，库存，试剂，耗材，采购，仪器，GLP,电子实验记录系统，化学试剂采购，制药研发管理，化学试剂管理，GLP合规，研发信息化，实验室信息化，软件系统,云计算" />
-    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
-  </head>
-  <body>
-    <div id="app"></div>
-    <!-- built files will be auto injected -->
-  </body>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <script>
+    function setCookie(params) {
+      alert(params)
+    }
+    function getBarcode() {
+      var json = {
+        data: { barcode: "20201123" },
+        name: "getBarcode"
+      };
+      window.webkit.messageHandlers.OCJSbridge.postMessage(JSON.stringify(json));
+    }
+
+  </script>
+</head>
+
+<body>
+  <button onclick="getBarcode()">提交</button>
+</body>
+
 </html>
