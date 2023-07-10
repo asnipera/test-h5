@@ -5,15 +5,11 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
   <script>
-    function setCookie(params) {
+    function myFunction(params) {
       alert(params)
     }
     function getBarcode() {
-      var json = {
-        data: { barcode: "20201123" },
-        name: "getBarcode"
-      };
-      window.webkit.messageHandlers.OCJSbridge.postMessage(JSON.stringify(json));
+      window.AndroidInterface.showToast("Hello from H5");
     }
 
   </script>
